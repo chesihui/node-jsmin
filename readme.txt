@@ -1,3 +1,6 @@
+
+增加了将汉字转化为unicode编码，防止汉字乱码想象，需要额外引用node-iconv模块
+------------------------------------------------------------------------------
 This is a node.js module for minimizing javascript (jsmin for short).
 
 It was originally written by Doug Crockford (www.crockford.com), was ported

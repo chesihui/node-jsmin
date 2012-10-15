@@ -2,6 +2,7 @@
 
 var fs = require('fs')
   , jsmin = require('jsmin').jsmin
+  , Iconv = require('iconv').Iconv
 
 var options = {
   output: true
@@ -38,9 +39,13 @@ out: while (args.length > 0) {
 }
 
 if (filename) {
-  fs.readFile(filename, 'utf8', function(err, text) {
+  fs.readFile(filename, function(err, buffer) {
     if (err) throw err
-    output(jsmin(text, options.level, options.comment))
+	var gbk_to_utf8_iconv = new Iconv('GBK', 'UTF-8//TRANSLIT//IGNORE');
+	var utf8_text = gbk_to_utf8_iconv.convert(buffer);
+    output(jsmin(utf8_text.toString(), options.level, options.comment))
+
+    //output(jsmin(text, options.level, options.comment))
   })
 }
 else {

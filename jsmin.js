@@ -60,6 +60,12 @@ String.prototype.has = function(c) {
   return this.indexOf(c) > -1;
 };
 
+function ToUnicode(str){
+    return str.replace(/[\u4E00-\u9FA5]/ig,function(w){
+            return escape(w).toLowerCase().replace(/%/ig,'\\');
+    });
+};
+
 exports.jsmin = jsmin;
 function jsmin(input, level, comment) {
 
@@ -360,6 +366,6 @@ function jsmin(input, level, comment) {
   if (comment) {
     return comment + '\n' + ret;
   }
-  return ret;
+  return ToUnicode(ret);
 }
 

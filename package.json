@@ -1,7 +1,7 @@
 {
   "name": "jsmin-extend",
   "version": "1.0.0",
-  "main": "jsmin",
+  "main": "jsmin-extend",
   "description": "A node.js module for javascript minification",
   "keywords": [
     "jsmin",

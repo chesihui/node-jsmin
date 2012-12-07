@@ -1,6 +1,6 @@
 {
-  "name": "jsmin",
-  "version": "1.0.1",
+  "name": "jsmin-extend",
+  "version": "1.0.0",
   "main": "jsmin",
   "description": "A node.js module for javascript minification",
   "keywords": [
@@ -9,17 +9,17 @@
     "javascript minification",
     "javascript minimization",
     "js minification",
+    "unicode",
     "js minimization"
   ],
   "author": {
-    "name": "Peteris Krumins",
-    "email": "peteris.krumins@gmail.com",
-    "url": "http://www.catonmat.net"
+    "name": "chesihui",
+    "email": "lover_116@163.com"
   },
   "license": "Doug Crockford's license that allows this module to be used for Good but not for Evil",
   "repository": {
     "type": "git",
-    "url": "http://github.com/pkrumins/node-jsmin.git"
+    "url": "https://github.com/chesihui/node-jsmin.git"
   },
   "engines": {
     "node": ">=0.1.93"

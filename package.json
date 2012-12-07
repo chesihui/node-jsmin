@@ -1,6 +1,6 @@
 {
   "name": "njsmin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "njsmin",
   "description": "A node.js module for javascript minification",
   "keywords": [

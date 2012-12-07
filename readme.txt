@@ -1,5 +1,5 @@
 
-增加了将汉字转化为unicode编码，防止汉字乱码想象，需要额外引用node-iconv模块
+增加了将汉字转化为unicode编码，防止汉字乱码，需要额外引用iconv-lite模块
 ------------------------------------------------------------------------------
 This is a node.js module for minimizing javascript (jsmin for short).
 

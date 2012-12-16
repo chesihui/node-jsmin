@@ -1,7 +1,10 @@
 {
   "name": "njsmin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "njsmin",
+  "dependencies": { 
+	"iconv-lite": ">=0.1.0"
+  },
   "description": "A node.js module for javascript minification",
   "keywords": [
     "jsmin",
@@ -23,9 +26,6 @@
   },
   "engines": {
     "node": ">=0.1.93"
-  },
-  "dependencies":{ 
-	'iconv-lite': '>=0.1.0'
   },
   "bin": {
     "njsmin": "./bin/njsmin"
